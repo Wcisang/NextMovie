@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NextMovie</string>
+
+
+    <string name="pref_search_key">search</string>
+    <string name="pref_search_title">Sort by</string>
+    <string name="pref_search_default">Popular</string>
+
+    <string name="pref_search_popular">Popular</string>
+    <string name="action_settings">Settings</string>
+
+
+
+</resources>

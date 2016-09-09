@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlack"
+    tools:context="com.gwr.nextmovie.activity.MovieDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlPoster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <ImageView
+                    android:id="@+id/ivPoster"
+                    android:layout_width="200dp"
+                    android:layout_height="275dp"
+                    android:foregroundGravity="center_horizontal|center" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlPoster"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvTitulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="TITULO"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/textviewSinopse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvTitulo"
+                    android:alpha="0.5"
+                    android:background="@color/titleBackground"
+                    android:text="Sinopse"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tvSinopse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textviewSinopse"
+                    android:paddingBottom="6dp"
+                    android:text="SINOPSE"
+                    android:textColor="@color/textColor"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textviewLancamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSinopse"
+                    android:background="@color/titleBackground"
+                    android:alpha="0.5"
+                    android:text="Data de Lançamento"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tvData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/textviewLancamento"
+                    android:gravity="center_vertical"
+                    android:textAlignment="textEnd"
+                    android:background="@color/titleBackground"
+                    android:alpha="0.5"
+                    android:text="RELEASE DATE"
+                    android:textColor="@color/textColor"
+                    android:textSize="14dp"
+                    android:layout_above="@+id/textviewVoto"
+                    android:layout_below="@+id/tvSinopse" />
+
+                <TextView
+                    android:id="@+id/textviewVoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textviewLancamento"
+                    android:alpha="0.5"
+                    android:background="@color/titleBackground"
+                    android:text="Média de Votos"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/tvVoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textviewVoto"
+                    android:text="MEDIA VOTOS"
+                    android:textColor="@color/textColor"
+                    android:textSize="14dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
